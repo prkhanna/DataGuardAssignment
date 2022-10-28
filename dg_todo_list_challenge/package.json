@@ -1,0 +1,24 @@
+{
+  "name": "dg-todolist",
+  "version": "0.1.0",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "method-override": "^3.0.0",
+    "start-server-and-test": "^1.14.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "cypress-run": "npx cypress run --headed",
+    "cypress-e2e":"start-server-and-test start http://localhost:8080 cypress-run"
+  },
+  "author": "fbrose@dataguard.de",
+  "description": "TODO list challenge",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^10.11.0",
+    "esbuild": "^0.15.11"
+  }
+}
